@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GCalculator</title>
+		<link rel="stylesheet" href="calc.css" />
+	</head>
+	<body>
+		<div class="calculator_frame">
+			<div class="calculation_container">
+				<div class="prev_entry_panel">
+					<span class="prev_entry" id="prev_entry">
+					</span>
+				</div>
+				<div class="entry_panel">
+					<span class="entry" id="entry">
+					</span>
+				</div>
+			</div>
+			<div class="buttons_container">
+				<table class="buttons">
+					<tbody>
+						<tr>
+							<td role="none">
+								<div class="util_panel" id="util_ce" tabindex="0" role="button">
+									CE
+								</div>
+							</td>
+							<td role="none">
+								<div class="util_panel" id="util_c" tabindex="0" role="button">
+									C
+								</div>
+							</td>
+							<td role="none">
+								<div class="util_panel" id="util_del" tabindex="0" role="button">
+									DEL
+								</div>
+							</td>
+							<td role="none">
+								<div class="opr_panel" data-operation="divide" tabindex="0" role="button">
+									÷
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td role="none">
+								<div class="num_panel" data-val="7" tabindex="0" role="button">
+									7
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="8" tabindex="0" role="button">
+									8
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="9" tabindex="0" role="button">
+									9
+								</div>
+							</td>
+							<td role="none">
+								<div class="opr_panel" data-operation="multiply" tabindex="0" role="button">
+									x
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td role="none">
+								<div class="num_panel" data-val="4" tabindex="0" role="button">
+									4
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="5" tabindex="0" role="button">
+									5
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="6" tabindex="0" role="button">
+									6
+								</div>
+								<td role="none">
+									<div class="opr_panel" data-operation="subtract" tabindex="0" role="button">
+										-
+									</div>
+								</td>
+							</td>
+						</tr>
+						<tr>
+							<td role="none">
+								<div class="num_panel" data-val="1" tabindex="0" role="button">
+									1
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="2" tabindex="0" role="button">
+									2
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="3" tabindex="0" role="button">
+									3
+								</div>
+							</td>
+							<td role="none">
+								<div class="opr_panel" data-operation="add" tabindex="0" role="button">
+									+
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td role="none">
+								<div class="nec_panel" id="num_sign" tabindex="0" role="button">
+									+/-
+								</div>
+							</td>
+							<td role="none">
+								<div class="num_panel" data-val="0" tabindex="0" role="button">
+									0
+								</div>
+							</td>
+							<td role="none">
+								<div class="nec_panel" id="num_point" tabindex="0" role="button">
+									.
+								</div>
+							</td>
+							<td role="none">
+								<div class="opr_panel" data-operation="equal" tabindex="0" role="button">
+									=
+								</div>
+							</td>
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="calcComponents.js"></script>
+		<script type="text/javascript" src="calcInput.js"></script>
+		<script type="text/javascript" src="calcUtils.js"></script>
+	</body>
+</html>
